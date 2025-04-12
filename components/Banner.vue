@@ -698,8 +698,9 @@
       <KRAChekers />
         
       <!-- Technology... -->
+      <div class="flex justify-center lg:justify-end ">
       <div 
-        class="mt-16 md:pl-10 md:pr-[90px] px-10 md:gap-[107px] bg-[#9E0008] pt-16 w-[90%]  lg:h-[431px] rounded-xl md:rounded-l-xl  md:ml-auto text-white overflow-hidden "
+        class="mt-16 px-10 md:pl-10 md:pr-[90px] md:gap-[107px] bg-[#9E0008] py-10 w-[90%] lg:h-[431px] rounded-xl md:rounded-l-xl   text-white  "
       >
       <div data-aos="fade-up" class=" max-w-[1500px] mx-auto grid lg:flex">
         <div class="lg:w-[94%] mx-auto w-full">
@@ -721,6 +722,8 @@
         />
       </div>
     </div>
+    </div>
+    
     </section>
   </div>
 </template>
