@@ -24,185 +24,207 @@
         </div>  -->
 
     <Carousel />
-    <!-- Red container div -->
+    
+]
+
+    
     <section
-      class="bg-[#BC252B] min-w-[100%] lg:flex grid bg-cover relative h-auto mt-16 z-10 pb-5"
+      class="bg-[#BC252B] w-full bg-cover relative h-auto mt-16 z-10 md:px-15 px-6  "
     >
       <img class="absolute -bottom-70 left-0" src="public/left.svg" alt="" />
       <img class="absolute -top-70 right-0" src="public/right.svg" alt="" />
-      <img class="absolute -top-50  -z-10 left-0" src="public/Gradient-left.png" alt="" />
-      <img class="absolute  -bottom-70 -z-10 right-0" src="public/Gradient-right.png" alt="" />
-      
+      <img
+        class="absolute -top-50 -z-10 left-0"
+        src="public/Gradient-left.png"
+        alt=""
+      />
+      <img
+        class="absolute -bottom-70 -z-10 right-0"
+        src="public/Gradient-right.png"
+        alt=""
+      />
 
-      <!-- Left section -->
-      <div
-        class="pt-10 md:pt-36 lg:pb-56 lg:pl-24 px-8 text-white w-full lg:w-[42%] z-12"
-      >
-        <h1 class="font-bold text-4xl">About KRA</h1>
-        <p class="text-lg">
-          The Kenya Revenue Authority was established by an Act of Parliament,
-          Chapter 469 of the laws of Kenya, which became effective on 1st July
-          1995. KRA is charged with collecting revenue on behalf of the
-          government of Kenya. One of the core functions of the Authority is to
-          assess, collect and account for all revenues.
-        </p>
+      <div class=" w-[90%] grid grid-cols-1 lg:grid-cols-10 gap-4 max-w-[1500px] mx-auto">
+        <!-- Left section -->
+        <div data-aos="fade-up-right"
+          class="py-10 md:pt-36 lg:pb-40 lg:col-span-4  text-white w-full"
+        >
+          <h1 class="font-bold text-4xl">About KRA</h1>
+          <p class="text-lg">
+            The Kenya Revenue Authority was established by an Act of Parliament,
+            Chapter 469 of the laws of Kenya, which became effective on 1st July
+            1995. KRA is charged with collecting revenue on behalf of the
+            government of Kenya. One of the core functions of the Authority is to
+            assess, collect and account for all revenues.
+          </p>
+        </div>
+  
+        <!-- Right section -->
+         <div data-aos="fade-up" class="lg:col-span-6 relative hidden sm:flex items-center justify-center w-[24em] h-[24em] sm:w-[32em] sm:h-[32em] mx-auto aspect-square lg:mt-20 md:mt-10 text-white">
+        
+        <div
+          class="rounded-full mx-auto w-[20em] h-[20em] sm:w-[28em] sm:h-[28em] border-4 border-dotted border-[#FFFFFF54] absolute inset-0 aspect-square "
+        ></div>
+          <!-- Inner Solid Circle -->
+          <div
+            class="rounded-full h-[18em] w-[18em] sm:w-[24em] sm:h-[24em] bg-[rgba(255,255,255,0.11)] p-12 -mt-15 flex items-center justify-center aspect-square relative"
+          >
+            <img class="-mt-20" src="public/KRA-lion.svg" alt="" />
+          
+          <!-- Buttons around the logo -->
+        
+          <button class="flex items-stretch absolute button btn-lion top-10 left-2.5 whitespace-nowrap">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.16992 7.43994L11.9999 12.5499L20.7699 7.46994"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 21.61V12.54"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.93014 2.48004L4.59014 5.44004C3.38014 6.11004 2.39014 7.79004 2.39014 9.17004V14.82C2.39014 16.2 3.38014 17.88 4.59014 18.55L9.93014 21.52C11.0701 22.15 12.9401 22.15 14.0801 21.52L19.4201 18.55C20.6301 17.88 21.6201 16.2 21.6201 14.82V9.17004C21.6201 7.79004 20.6301 6.11004 19.4201 5.44004L14.0801 2.47004C12.9301 1.84004 11.0701 1.84004 9.93014 2.48004Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Customs</p>
+          </button>
+  
+          <button class="flex absolute items-stretch button btn-lion top-18 left-[89%] whitespace-nowrap ">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 11H8M10 15H8M16 7H8M20 6.8V17.2C20 18.8802 20 19.7202 19.673 20.362C19.3854 20.9265 18.9265 21.3854 18.362 21.673C17.7202 22 16.8802 22 15.2 22H8.8C7.11984 22 6.27976 22 5.63803 21.673C5.07354 21.3854 4.6146 20.9265 4.32698 20.362C4 19.7202 4 18.8802 4 17.2V6.8C4 5.11984 4 4.27976 4.32698 3.63803C4.6146 3.07354 5.07354 2.6146 5.63803 2.32698C6.27976 2 7.11984 2 8.8 2H15.2C16.8802 2 17.7202 2 18.362 2.32698C18.9265 2.6146 19.3854 3.07354 19.673 3.63803C20 4.27976 20 5.11984 20 6.8Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>File returns</p>
+          </button>
+  
+          <button class="flex absolute items-stretch button btn-lion top-50 left-[89%] whitespace-nowrap">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.75 12L10.58 14.83L16.25 9.17004"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Tax Compliance</p>
+          </button>
+  
+          <button class="flex absolute items-stretch button btn-lion bottom-15 -right-2.5 whitespace-nowrap">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.75 12L10.58 14.83L16.25 9.17004"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>More</p>
+          </button>
+  
+          <button class="flex absolute items-stretch button btn-lion bottom-20 -left-5 whitespace-nowrap">
+            <svg
+              width="22"
+              height="16"
+              viewBox="0 0 22 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 6H1M1 4.2L1 11.8C1 12.9201 1 13.4802 1.21799 13.908C1.40973 14.2843 1.71569 14.5903 2.09202 14.782C2.51984 15 3.07989 15 4.2 15L17.8 15C18.9201 15 19.4802 15 19.908 14.782C20.2843 14.5903 20.5903 14.2843 20.782 13.908C21 13.4802 21 12.9201 21 11.8V4.2C21 3.0799 21 2.51984 20.782 2.09202C20.5903 1.7157 20.2843 1.40974 19.908 1.21799C19.4802 1 18.9201 1 17.8 1L4.2 1C3.0799 1 2.51984 1 2.09202 1.21799C1.7157 1.40973 1.40973 1.71569 1.21799 2.09202C1 2.51984 1 3.07989 1 4.2Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>payments</p>
+          </button>
+  
+          <button class="flex absolute items-stretch button btn-lion top-40 -left-20 whitespace-nowrap">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 10.5L11 12.5L15.5 8M20 21V7.8C20 6.11984 20 5.27976 19.673 4.63803C19.3854 4.07354 18.9265 3.6146 18.362 3.32698C17.7202 3 16.8802 3 15.2 3H8.8C7.11984 3 6.27976 3 5.63803 3.32698C5.07354 3.6146 4.6146 4.07354 4.32698 4.63803C4 5.27976 4 6.11984 4 7.8V21L6.75 19L9.25 21L12 19L14.75 21L17.25 19L20 21Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+  
+            <p>Amnesty</p>
+          </button>
+        </div>
+        
       </div>
 
-      <!-- Right section -->
-      <div
-        class="bg-[url('public/KRA-lion-bg.png')] bg-contain   md:w-[500px] md:h-[500px] lg:mt-[109px] mt-15 mx-auto lg:ml-[15%] hidden  relative bg-no-repeat items-center justify-center md:flex"
-      >
-        <img class="-mt-25" src="public/KRA-lion.svg" alt="" />
-        <!-- Buttons around the logo -->
-
-        <button class="flex absolute button btn-lion top-10 left-15">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3.16992 7.43994L11.9999 12.5499L20.7699 7.46994"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M12 21.61V12.54"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M9.93014 2.48004L4.59014 5.44004C3.38014 6.11004 2.39014 7.79004 2.39014 9.17004V14.82C2.39014 16.2 3.38014 17.88 4.59014 18.55L9.93014 21.52C11.0701 22.15 12.9401 22.15 14.0801 21.52L19.4201 18.55C20.6301 17.88 21.6201 16.2 21.6201 14.82V9.17004C21.6201 7.79004 20.6301 6.11004 19.4201 5.44004L14.0801 2.47004C12.9301 1.84004 11.0701 1.84004 9.93014 2.48004Z"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p>Customs</p>
-        </button>
-
-        <button class="flex absolute button btn-lion top-18 -right-5">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14 11H8M10 15H8M16 7H8M20 6.8V17.2C20 18.8802 20 19.7202 19.673 20.362C19.3854 20.9265 18.9265 21.3854 18.362 21.673C17.7202 22 16.8802 22 15.2 22H8.8C7.11984 22 6.27976 22 5.63803 21.673C5.07354 21.3854 4.6146 20.9265 4.32698 20.362C4 19.7202 4 18.8802 4 17.2V6.8C4 5.11984 4 4.27976 4.32698 3.63803C4.6146 3.07354 5.07354 2.6146 5.63803 2.32698C6.27976 2 7.11984 2 8.8 2H15.2C16.8802 2 17.7202 2 18.362 2.32698C18.9265 2.6146 19.3854 3.07354 19.673 3.63803C20 4.27976 20 5.11984 20 6.8Z"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p>File returns</p>
-        </button>
-
-        <button class="flex absolute button btn-lion top-50 -right-20">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M7.75 12L10.58 14.83L16.25 9.17004"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p>Tax Compliance</p>
-        </button>
-
-        <button class="flex absolute button btn-lion bottom-25 right-8">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M7.75 12L10.58 14.83L16.25 9.17004"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p>More</p>
-        </button>
-
-        <button class="flex absolute button btn-lion bottom-30 -left-5">
-          <svg
-            width="22"
-            height="16"
-            viewBox="0 0 22 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21 6H1M1 4.2L1 11.8C1 12.9201 1 13.4802 1.21799 13.908C1.40973 14.2843 1.71569 14.5903 2.09202 14.782C2.51984 15 3.07989 15 4.2 15L17.8 15C18.9201 15 19.4802 15 19.908 14.782C20.2843 14.5903 20.5903 14.2843 20.782 13.908C21 13.4802 21 12.9201 21 11.8V4.2C21 3.0799 21 2.51984 20.782 2.09202C20.5903 1.7157 20.2843 1.40974 19.908 1.21799C19.4802 1 18.9201 1 17.8 1L4.2 1C3.0799 1 2.51984 1 2.09202 1.21799C1.7157 1.40973 1.40973 1.71569 1.21799 2.09202C1 2.51984 1 3.07989 1 4.2Z"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p>payments</p>
-        </button>
-
-        <button class="flex absolute button btn-lion top-40 -left-10">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9 10.5L11 12.5L15.5 8M20 21V7.8C20 6.11984 20 5.27976 19.673 4.63803C19.3854 4.07354 18.9265 3.6146 18.362 3.32698C17.7202 3 16.8802 3 15.2 3H8.8C7.11984 3 6.27976 3 5.63803 3.32698C5.07354 3.6146 4.6146 4.07354 4.32698 4.63803C4 5.27976 4 6.11984 4 7.8V21L6.75 19L9.25 21L12 19L14.75 21L17.25 19L20 21Z"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-
-          <p>Amnesty</p>
-        </button>
       </div>
     </section>
 
     <!-- Navigating Taxes, Building Futures -->
-    <section class="mt-2 text-xl text-[#475467] rounded-xl w-[90%] mx-auto">
-      <div class="md:pl-8 pt-8">
+    <section class=" mt-10 text-xl text-[#475467] rounded-xl w-[90%] max-w-[1500px]  mx-auto">
+      <div data-aos="fade-up" class="md:pl-8 ">
         <h1 class="text-[#101828] font-semibold text-4xl">
           Navigating Taxes, Building Futures
         </h1>
@@ -213,7 +235,7 @@
         </p>
       </div>
       <!-- Text containers below -->
-      <div class="grid md:flex gap-8 mt-10 md:mt-24 md:px-8">
+      <div data-aos="fade-up" class="grid md:flex gap-8 mt-10 md:mt-24 md:px-8">
         <div class="flex-col gap-2">
           <h1 class="text-[#101828]">Access your profile easily</h1>
           <p class="text-base">
@@ -247,9 +269,9 @@
     </section>
 
     <!-- Individual tax payers -->
-    <section class="w-[90%] mx-auto text-[#475467] text-xl font-semibold mt-20">
+    <section class="w-[90%] mx-auto text-[#475467] text-xl max-w-[1500px] font-semibold mt-10" >
       <!-- Heading -->
-      <div class="mt-8 md:pl-8 md:w-[60%]">
+      <div data-aos="fade-up-right" class="mt-8 md:pl-8 md:w-[60%]">
         <div class="rounded-2xl bg-[#FEF3F2] w-24 md:py-1 flex gap-[6px]">
           <img class="pl-[10px]" src="public/Dot.svg" alt="" />
           <p class="text-sm text-[#B42318] font-medium">Individual</p>
@@ -269,10 +291,10 @@
 
       <!-- lower section -->
       <section
-        class="mt-16 md:px-8 grid md:flex md:gap-2 lg:gap-0 justify-between max-h-[690px]"
+        class="mt-16 md:px-8 grid md:flex  md:gap-4 justify-between"
       >
         <!-- right div -->
-        <div class="grid gap-4 md:w-1/2">
+        <div data-aos="fade-up-right" class="grid gap-4 md:w-1/2">
           <div>
             <h1 class="text-[#101828] mt-2">Filing Tax Returns:</h1>
             <p class="mt-2 font-medium text-base">
@@ -311,15 +333,17 @@
         </div>
 
         <div>
-          <img class=" md:flex" src="public/Content.png" alt="" />
+          <img data-aos="fade-up" class=" mt-5 md:mt-0" src="public/Content.png" alt="" />
         </div>
       </section>
     </section>
 
     <!-- Business tax payers -->
-    <section class="w-[90%] mx-auto text-[#475467] text-xl font-semibold mt-[80] md:mt-[100px] ">
+    <section
+      class="w-[90%] mx-auto text-[#475467] text-xl max-w-[1500px]  font-semibold mt-[80] md:mt-[50px] lg:mt-24"
+    >
       <!-- Heading -->
-      <div class="mt-8 md:pl-70 lg:w-[60%]">
+      <div data-aos="fade-up-left" class="mt-8 max-w-[824px] mx-auto">
         <div class="rounded-2xl bg-[#F8F9FC] w-24 md:py-1 flex gap-[6px]">
           <img class="pl-[10px]" src="public/BlueDot.svg" alt="" />
           <p class="text-sm text-[#363F72] font-medium">Individual</p>
@@ -337,16 +361,18 @@
         </div>
       </div>
       <!-- lower section -->
-      <section class="mt-16 md:px-8 grid md:flex md:gap-2 lg:gap-0 justify-between">
+      <section
+        class="mt-16 md:px-8 grid md:flex md:gap-8 gap-4 justify-between"
+      >
         <!--Right image  -->
         <div>
-          <img class=" md:flex" src="public/Content2.png" alt="" />
+          <img data-aos="fade-up" class="md:flex" src="public/Content2.png" alt="" />
         </div>
 
         <!-- left div -->
-        <div class="grid gap-4 md:w-1/2">
+        <div data-aos="fade-up-left" class="grid gap-4 md:w-1/2">
           <div>
-            <h1 class="text-[#101828] mt-2">Filing Tax Returns:</h1>
+            <h1 class="text-[#101828] mt-5 md:mt-2">Filing Tax Returns:</h1>
             <p class="mt-2 font-medium text-base">
               Individual taxpayers are required to file annual tax returns. They
               can use the KRA system to submit their returns, providing details
@@ -385,9 +411,10 @@
     </section>
 
     <!-- Invoicing -->
-    <section class="bg-[#2C2829] md:h-auto mt-12 grid md:flex md:pb-20">
+    <section class="bg-[#2C2829] ">
+      <div class=" max-w-[1500px] mx-auto md:h-auto mt-12 grid md:flex md:pb-20 ">
       <!-- Right text -->
-      <div class="md:pt-32 md:pl-28 px-6 pt-6 text-white text-lg  md:w-1/2">
+      <div data-aos="fade-up" class="md:pt-32 py-10 lg:pl-20 pl-10  text-white text-lg md:w-1/2">
         <h1 class="font-roboto font-semibold text-4xl">Invoicing</h1>
         <p class="md:w-[69.5%] mt-5">
           Transform the way you manage your business seamlessly with ETIMS
@@ -477,16 +504,17 @@
 
       <!-- Left section -->
       <div
-        class="md:w-1/2 bg-[url('public/Tailor.png')] bg-cover pb-5 bg-no-repeat  bg-center md:relative h-auto"
+        class="md:w-1/2 bg-[url('public/Tailor.png')] bg-cover pb-5 bg-no-repeat bg-center md:relative h-auto"
       >
         <img class="md:absolute md:mt-60" src="public/Invoice.png" alt="" />
       </div>
+    </div>
     </section>
 
     <!-- Property management with eRITS, tutorial, KRA checkers, Technology... -->
     <section>
       <!-- Property Management -->
-      <div class="w-[90%] mt-24 mx-auto">
+      <div  class="w-[90%] max-w-[1500px]  mt-10 mx-auto">
         <h1 class="text-4xl text-[#101828] text-center font-semibold">
           Property Management with eRITS
         </h1>
@@ -495,8 +523,8 @@
           click of a button
         </p>
 
-        <div
-          class="bg-[url('public/modern-apartment.png')] bg-cover bg-no-repeat h-auto py-6 mt-21"
+        <div data-aos="flip-left"
+          class="bg-[url('public/modern-apartment.png')] bg-cover bg-no-repeat h-auto py-6  mt-10 lg:mt-24 rounded-xl"
         >
           <div
             class="md:w-[40%] w-[80%] mx-auto md:ml-[55%] bg-[#222222B2] backdrop-blur-lg rounded-xl relative"
@@ -521,286 +549,193 @@
       </div>
 
       <!-- Tutorials -->
-      <div class="w-[90%] mt-28 mx-auto">
+      <div  class="w-[90%] lg:mt-28 mt-10 max-w-[1500px]  mx-auto">
         <h1 class="text-4xl text-[#101828] font-semibold">Tutorials</h1>
 
-        <div class="grid md:flex mt-7 justify-between">
-          <div>
-            <img src="public/Laptop1.png" alt="" />
+        <div data-aos="zoom-in" class="grid md:grid-cols-2 lg:flex mt-7 gap-4  mx-auto md:justify-between">
+          <div class="w-full">
+            <img class="w-full" src="public/Laptop1.png" alt="" @click="showModal = true" />
             <p class="mt-8 text-[#475467] font-medium">
               File Income Tax Returns
             </p>
+            <!-- Modal -->
+            <div
+              v-if="showModal"
+              class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden w-full max-w-2xl relative"
+              >
+                <!-- Close Button -->
+                <button
+                  class="absolute top-2 right-2 text-gray-600 text-xl"
+                  @click="closeModal"
+                >
+                  &times;
+                </button>
+
+                <!-- Video -->
+                <div class="w-full aspect-video">
+                  <iframe
+                    class="w-full h-full"
+                    :src="videoUrl"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <img src="public/Laptop2.png" alt="" />
+          <div class="w-full">
+            <img class="w-full" src="public/Laptop2.png" alt="" @click="showModal = true" />
             <p class="mt-8 text-[#475467] font-medium">File a NIL Return</p>
+            <!-- Modal -->
+            <div
+              v-if="showModal"
+              class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden w-full max-w-2xl relative"
+              >
+                <!-- Close Button -->
+                <button
+                  class="absolute top-2 right-2 text-gray-600 text-xl"
+                  @click="closeModal"
+                >
+                  &times;
+                </button>
+
+                <!-- Video -->
+                <div class="w-full aspect-video">
+                  <iframe
+                    class="w-full h-full"
+                    :src="videoUrl"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <img src="public/Laptop3.png" alt="" />
+          <div class="w-full">
+            <img class="w-full"  src="public/Laptop3.png" alt="" @click="showModal = true" />
             <p class="mt-8 text-[#475467] font-medium">
               File Withholding Income Tax Returns
             </p>
+            <!-- Modal -->
+            <div
+              v-if="showModal"
+              class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden w-full max-w-2xl relative"
+              >
+                <!-- Close Button -->
+                <button
+                  class="absolute top-2 right-2 text-gray-600 text-xl"
+                  @click="closeModal"
+                >
+                  &times;
+                </button>
+
+                <!-- Video -->
+                <div class="w-full aspect-video">
+                  <iframe
+                    class="w-full h-full"
+                    :src="videoUrl"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <img src="public/Laptop4.png" alt="" />
+          <div class="w-full">
+            <img class="w-full" src="public/Laptop4.png" alt="" @click="showModal = true" />
             <p class="mt-8 text-[#475467] font-medium">
               File Withholding Income Tax Returns
             </p>
+            <!-- Modal -->
+            <div
+              v-if="showModal"
+              class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            >
+              <div
+                class="bg-white rounded-lg overflow-hidden w-full max-w-2xl relative"
+              >
+                <!-- Close Button -->
+                <button
+                  class="absolute top-2 right-2 text-gray-600 text-xl"
+                  @click="closeModal"
+                >
+                  &times;
+                </button>
+
+                <!-- Video -->
+                <div class="w-full aspect-video">
+                  <iframe
+                    class="w-full h-full"
+                    :src="videoUrl"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- KRA Checkers -->
-      <div class="w-[83%] mx-auto mt-11">
-        <h1 class="text-4xl text-[#101828] text-center font-semibold">
-          KRA Checkers
-        </h1>
-        <p class="text-[#475467] text-[22px] font-medium mt-2 text-center">
-          Select Checker Below
-        </p>
 
-        <div class="mt-9 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div
-            class="border border-[#EAECF0] rounded-xl py-4 px-4 hover:bg-gray-300 flex justify-between"
-          >
-            <div>
-              <h1 class="text-[#344054] font-semibold text-xl">
-                Staff Checker
-              </h1>
-              <p class="text-[#475467]">verify agents that work KRA</p>
-            </div>
-            <svg
-              class="self-center"
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66675 9.99984H16.3334M16.3334 9.99984L10.5001 4.1665M16.3334 9.99984L10.5001 15.8332"
-                stroke="#E36F04"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-
-          <div
-            class="border border-[#EAECF0] hover:bg-gray-300 rounded-xl py-4 px-4 flex justify-between"
-          >
-            <div>
-              <h1 class="text-[#344054] font-semibold text-xl">
-                Application Status Checker
-              </h1>
-              <p class="text-[#475467]">Save my login details for next time.</p>
-            </div>
-            <svg
-              class="self-center"
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66675 9.99984H16.3334M16.3334 9.99984L10.5001 4.1665M16.3334 9.99984L10.5001 15.8332"
-                stroke="#E36F04"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-
-          <div
-            class="border border-[#EAECF0] hover:bg-gray-300 rounded-xl py-4 px-4 flex justify-between"
-          >
-            <div>
-              <h1 class="text-[#344054] font-semibold text-xl">Pin checker</h1>
-              <p class="text-[#475467]">Save my login details for next time.</p>
-            </div>
-            <svg
-              class="self-center"
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66675 9.99984H16.3334M16.3334 9.99984L10.5001 4.1665M16.3334 9.99984L10.5001 15.8332"
-                stroke="#E36F04"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-
-          <div
-            class="border border-[#EAECF0] rounded-xl py-4 hover:bg-gray-300 px-4 flex justify-between"
-          >
-            <div>
-              <h1 class="text-[#344054] font-semibold text-xl">
-                Tax Compliance Certificate /Exemption <br>   Certificate/Excise
-                License/Certificate Checker
-              </h1>
-            </div>
-            <svg
-              class="self-center"
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66675 9.99984H16.3334M16.3334 9.99984L10.5001 4.1665M16.3334 9.99984L10.5001 15.8332"
-                stroke="#E36F04"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-
-          <div
-            class="border border-[#EAECF0] hover:bg-gray-300 rounded-xl py-4 px-4 flex justify-between"
-          >
-            <div>
-              <h1 class="text-[#344054] font-semibold text-xl">
-                Withholding Tax Agent Checker
-              </h1>
-              <p class="text-[#475467]">Verify Withholding Agent.</p>
-            </div>
-            <svg
-              class="self-center"
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66675 9.99984H16.3334M16.3334 9.99984L10.5001 4.1665M16.3334 9.99984L10.5001 15.8332"
-                stroke="#E36F04"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-
-          <div
-            class="border border-[#EAECF0] hover:bg-gray-300 rounded-xl py-4 px-4 flex justify-between"
-          >
-            <div>
-              <h1 class="text-[#344054] font-semibold text-xl">
-                Control Unit checker
-              </h1>
-              <p class="text-[#475467]">Verify Control Unit Serial Number</p>
-            </div>
-            <svg
-              class="self-center"
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66675 9.99984H16.3334M16.3334 9.99984L10.5001 4.1665M16.3334 9.99984L10.5001 15.8332"
-                stroke="#E36F04"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-
-          <div
-            class="border border-[#EAECF0] hover:bg-gray-300 rounded-xl py-4 px-4 flex justify-between"
-          >
-            <div>
-              <h1 class="text-[#344054] font-semibold text-xl">
-                Invoice Number checker
-              </h1>
-              <p class="text-[#475467]">
-                Validate Control Unit Invoice Number.
-              </p>
-            </div>
-            <svg
-              class="self-center"
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66675 9.99984H16.3334M16.3334 9.99984L10.5001 4.1665M16.3334 9.99984L10.5001 15.8332"
-                stroke="#E36F04"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-
-          <div
-            class="border border-[#EAECF0] rounded-xl hover:bg-gray-300 py-4 px-4 flex justify-between"
-          >
-            <div>
-              <h1 class="text-[#344054] font-semibold text-xl">
-                Payment Registration Number (PRN)Checker
-              </h1>
-              <p class="text-[#475467]">Save my login details for next time.</p>
-            </div>
-            <svg
-              class="self-center"
-              width="21"
-              height="20"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66675 9.99984H16.3334M16.3334 9.99984L10.5001 4.1665M16.3334 9.99984L10.5001 15.8332"
-                stroke="#E36F04"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-
+      <KRAChekers />
+        
       <!-- Technology... -->
-      <div class=" mt-16 py-10  lg:w-[95%] bg-[#9E0008] pt-16 lg:pl-9 lg:ml-19 md:pr-[90px] lg:h-[431px] rounded-l-xl text-white grid lg:flex">
-        <div class="  w-[94%] mx-auto" >
-        <h1 class=" font-semibold text-3xl ">
-          Technology is not only changing the way we interact but also the way we do business.
-        </h1>
-        <p class=" text-xl mt-8">
-          It is not surprising that technology has also affected how tax is administered. KRA as part of its agenda to enhance service delivery as well as promote tax compliance continues to implement systems that leverage on technology to simplify tax operations.
-        </p>
+      <div 
+        class="mt-16 md:pl-10 md:pr-[90px] px-10 md:gap-[107px] bg-[#9E0008] pt-16 w-[90%]  lg:h-[431px] rounded-xl md:rounded-l-xl   md:ml-auto text-white "
+      >
+      <div data-aos="fade-up" class=" max-w-[1500px] mx-auto grid lg:flex">
+        <div class="lg:w-[94%] mx-auto w-full">
+          <h1 class="font-semibold text-3xl">
+            Technology is not only changing the way we interact but also the way
+            we do business.
+          </h1>
+          <p class="text-xl mt-8">
+            It is not surprising that technology has also affected how tax is
+            administered. KRA as part of its agenda to enhance service delivery
+            as well as promote tax compliance continues to implement systems
+            that leverage on technology to simplify tax operations.
+          </p>
+        </div>
+        <img data-aos="fade-up-left"
+          class="md:h-[463px] w-full mt-5 lg:mt-0 pb-5  mx-auto "
+          src="public/Accountant.png"
+          alt=""
+        />
       </div>
-        <img class="md:h-[463px] md:w-auto w-[94%] mx-auto mt-6 md-mt-0" src="public/Accountant.png" alt="">
-
-      </div>
-
-
-
+    </div>
     </section>
   </div>
 </template>
 
 <script setup>
 import Carousel from "@/components/Carousel.vue";
+import { ref } from "vue";
+import KRAChekers from "@/components/KRAChekers.vue";
+
+const showModal = ref(false);
+const videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
+
+const closeModal = () => {
+  showModal.value = false;
+};
 </script>
+
+

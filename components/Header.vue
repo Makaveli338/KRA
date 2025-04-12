@@ -1,5 +1,5 @@
 <template>
-    <section class=" grid md:flex md:justify-between items-center mt-6  md:px-24 ">
+    <section class=" grid md:flex md:justify-between justify-center md:gap-0 gap-6  items-center mt-6 mx-auto max-w-[1500px]  w-[90%]  ">
      <!-- Logo -->   
 
       <img  src="public/logo.svg" alt="">

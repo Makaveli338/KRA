@@ -1,5 +1,6 @@
 <template>
-    <section class=" bg-[#F6F5F5] md:mt-[212px] mt-20 h-auto grid px-10">
+    <section class=" bg-[#F6F5F5] lg:mt-[212px] mt-10 h-auto grid px-10 ">
+      <div class=" max-w-[1500px] mx-auto w-full">
         <!-- Upper section -->
         <div class=" lg:flex grid justify-between pt-[60px] md:px-[63px]  ">
        <img class=" h-[60px]  max-w-[260px] " src="public/logo.svg" alt="">
@@ -36,12 +37,6 @@
           <img src="public/f.svg" />
         </div>
       </div>
-    
-    
-
-
-
-
-
+    </div>
     </section>
 </template>

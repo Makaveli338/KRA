@@ -1,105 +1,116 @@
 <template>
-  <div class="relative overflow-hidden">
-    <div
-      class="w-full mt-16 flex transition-transform duration-500 ease-in-out"
-      :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
-    >
-      <div
-        v-for="(slide, index) in slides"
-        :key="index"
-        class="min-w-full flex flex-col-reverse lg:flex-row  justify-between items-center "
-      >
-        <!-- Left Text Section -->
-        <div class="md:pt-20 md:pl-24 mx-auto w-[96%] md:w-auto md:mx-0 md:max-w-[570px]">
-          <h2 class="text-3xl md:text-5xl font-semibold">{{ slide.title }}</h2>
-          <p class="text-[#475467] text-lg mt-8" v-html="slide.description"></p>
-          <div class="space-x-4 flex mt-8 flex-wrap justify-center md:justify-start">
+  <Carousel 
+    :items-to-show="1" 
+    :wrap-around="true" 
+    :autoplay="5000"
+    v-model:currentSlide="currentSlide"
+    class=" mt-4 lg:mt-16 relative px-6 md:px-8 max-w-[1500px] w-[90%] mx-auto"
+  >
+    <Slide v-for="(slide, index) in slides" :key="index">
+      <div class="flex flex-col sm:flex-row bg-white rounded-xl overflow-hidden ">
+        <!-- Text Section (Left) -->
+        <div  class="pb-4 md:w-1/2 flex flex-col justify-center ">
+          <!-- Combine title and title2 into one heading -->
+          <h2 class="text-4xl font-bold mb-4 leading-tight">
+            {{ slide.title }}<br />
+            {{ slide.title2 }}
+          </h2>
+
+          <!-- Paragraphs -->
+          <p class="text-gray-600 mb-4 break-words whitespace-normal">
+            {{ slide.description }}
+          </p>
+          <p class="text-gray-600 mb-4">
+            {{ slide.description2 }}
+          </p>
+
+          <!-- Buttons with horizontal spacing -->
+          <div class="flex gap-6">
             <button class="button btn-secondary">
-              {{ slide.button1description }}
+              {{ slide.buttonText }}
             </button>
             <button class="button btn-tertiary">
-              {{ slide.button2description }}
+              {{ slide.buttonText2 }}
             </button>
           </div>
         </div>
 
-        <!-- Right Image Section -->
-        <div class="md:mr-10 mt-8 md:mt-0">
-          <img :src="`../${slide.image}`" class="w-full object-cover" />
+         <!-- Image Section (Right) -->
+        <div class="md:w-1/2 flex items-center justify-center py-6">
+          <img v-if="index == 0" src="/public/Group_1.png" />
+          <img v-if="index == 1" src="/public/Group_2.png" />
+          <img v-if="index == 2" src="/public/Group_3.png" />
+          <img v-if="index == 3" src="/public/Group_4.png" />
         </div>
       </div>
-    </div>
+    </Slide>
 
-    <!-- Navigation Dots -->
-    <div
-      class="absolute top-[10%] md:top-[65%] left-1/2 transform -translate-x-1/2 flex space-x-2"
-    >
-      <button
-        v-for="(dot, index) in slides"
-        :key="index"
-        @click="currentSlide = index"
-        :class="[
-          'w-3 h-3 rounded-full transition-colors duration-300',
-          currentSlide === index ? 'bg-[#E36F04]' : 'bg-[#D9D9D9]',
-        ]"
-      />
-    </div>
-  </div>
+    <!-- Custom Navigation Dots -->
+    <template #addons="{ goToSlide, currentSlide }">
+      <div class=" md:flex absolute -bottom-5 md:right-[43%] right-[30%] -translate-x-1/2 translate-y-[15px] z-9 w-30 flex justify-center items-center h-6  rounded-xl">
+        <div class="flex space-x-2">
+          <button
+            v-for="(slide, i) in slides"
+            :key="i"
+            @click="goToSlide(i)"
+            :class="[
+              'w-3 h-3 rounded-full transition-colors duration-300',
+              currentSlide === i ? 'bg-red-600' : 'bg-gray-300'
+            ]"
+          ></button>
+        </div>
+      </div>
+    </template>
+
+  </Carousel>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { onMounted, onBeforeUnmount } from "vue";
+import { ref } from 'vue'
+import { Carousel, Slide } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
 
-let interval = null;
-
-onMounted(() => {
-  interval = setInterval(() => {
-    currentSlide.value = (currentSlide.value + 1) % slides.length;
-  }, 5000);
-});
-
-onBeforeUnmount(() => {
-  clearInterval(interval);
-});
-const currentSlide = ref(0);
+const currentSlide = ref(0)
 
 const slides = [
   {
-    title: "Tulipe Ushuru Tujitegemee.",
-    description:
-      "The convenient way for taxpayers to file their tax returns, make tax payments, and access various tax-related services online. <br><br> Kenya revenue authority online services. Apply and pay for the services conveniently through your ecitizen account",
-    image: "/public/Group_1.png",
-    button1description: "Sign in",
-    button2description: " Learn more",
+    title: "Tulipe Ushuru",
+    title2: "Tujitegemee.",
+    description: "The convenient way for taxpayer to file their tax returns, make tax payments, and access various tax-related services online.",
+    description2: "Kenya revenue Authority online services. Apply and pay for the services conviniently through your eCitizen account.",
+    buttonText: "Sign In",
+    buttonText2: "Learn More",
+    image: "/images/kraprofiles.png",
+    alt: "KRA Profiles"
   },
   {
-    title: "Property Management with eRITS",
-    description:
-      "Enjoy a hassle-free experience with our simplified registration process. Register your rental properties, file and pay your rental income taxes seamlessly while enjoying our bundled property management system ",
-    image: "/public/Group_2.png",
-    button1description: "Get Started on eRITS",
-    button2description: " Learn more",
+    title: "Property Management",
+    title2: "with eRITS",
+    description: "Enjoy a hassle-free experience with our simplified registration process. Register your rental properties, file and pay your rental income taxes seamlessly while enjoying out bundled property management system",
+    buttonText: "Get Started on eRITS",
+    buttonText2: "Learn More",
+    image: "/images/erits.png",
+    alt: "eRITS"
   },
   {
     title: "Invoicing on eTIMS",
-    description:
-      "Transform the way you manage your business seamlessly with ETIMS E-Invoicing. ETIMS E-Invoicing is your comprehensive solution to streamline and optimize the invoicing workflow, allowing you to focus on what matters most.",
-    image: "/public/Group_1.png",
-    button1description: "Get Started on eTIMS",
-    button2description: " Learn more",
+    description: "Transform the way you manage your business semlessly with ETIMS E-Invoicing. ETIMS E-Invoicing is your comprehensive solution to streamline and optimizethe invoicing workflow, allowing you to focus on what matters most.",
+    buttonText: "Get Started on eTIMS",
+    buttonText2: "Learn More",
+    image: "/images/etims.png",
+    alt: "Adventure Scene"
   },
   {
     title: "Customs",
-    description:
-      "Access Customs services seamlessly from the simplified solutions portal today. Apply to become an authorised exporter and apply for COOs and more directly from your KRA profile.",
-    image: "/public/Group_4.png",
-    button1description: "Sign in",
-    button2description: " Learn more",
-  },
-];
+    description: "Access Customs services seamlessly from the simplified solutions portal today. Apply to become an authourised exporter and apply for COOs and more directly from your KRA profile",
+    buttonText: "Get Started on eRITS",
+    buttonText2: "Learn More",
+    image: "/images/Customs.png",
+    alt: "eRITS"
+  }
+]
 </script>
 
 <style scoped>
-/* You can add animations or styling as needed */
+/* Optional: Customize further if needed */
 </style>
