@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template >
+  <div class="overflow-x-hidden">
     <!-- dummy container  -->
     <!-- <div class=" w-full mt-16 grid md:flex">
           <div class=" w-full md:w-1/2">
@@ -28,7 +28,7 @@
 ]
 
     
-    <section
+<section
       class="bg-[#BC252B] w-full bg-cover relative h-auto mt-16 z-10 md:px-15 px-6  "
     >
       <img class="absolute -bottom-70 left-0" src="public/left.svg" alt="" />
@@ -44,7 +44,7 @@
         alt=""
       />
 
-      <div class=" w-[90%] grid grid-cols-1 lg:grid-cols-10 gap-4 max-w-[1500px] mx-auto">
+      <div class=" grid grid-cols-1 lg:grid-cols-10 gap-4 max-w-[1500px] mx-auto">
         <!-- Left section -->
         <div data-aos="fade-up-right"
           class="py-10 md:pt-36 lg:pb-40 lg:col-span-4  text-white w-full"
@@ -414,7 +414,7 @@
     <section class="bg-[#2C2829] ">
       <div class=" max-w-[1500px] mx-auto md:h-auto mt-12 grid md:flex md:pb-20 ">
       <!-- Right text -->
-      <div data-aos="fade-up" class="md:pt-32 py-10 lg:pl-20 pl-10  text-white text-lg md:w-1/2">
+      <div data-aos="fade-up" class="md:pt-32 py-10 px-6  text-white text-lg md:w-1/2">
         <h1 class="font-roboto font-semibold text-4xl">Invoicing</h1>
         <p class="md:w-[69.5%] mt-5">
           Transform the way you manage your business seamlessly with ETIMS
@@ -699,7 +699,7 @@
         
       <!-- Technology... -->
       <div 
-        class="mt-16 md:pl-10 md:pr-[90px] px-10 md:gap-[107px] bg-[#9E0008] pt-16 w-[90%]  lg:h-[431px] rounded-xl md:rounded-l-xl   md:ml-auto text-white "
+        class="mt-16 md:pl-10 md:pr-[90px] px-10 md:gap-[107px] bg-[#9E0008] pt-16 w-[90%]  lg:h-[431px] rounded-xl md:rounded-l-xl  md:ml-auto text-white overflow-hidden "
       >
       <div data-aos="fade-up" class=" max-w-[1500px] mx-auto grid lg:flex">
         <div class="lg:w-[94%] mx-auto w-full">

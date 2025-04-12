@@ -4,7 +4,7 @@
     :wrap-around="true" 
     :autoplay="5000"
     v-model:currentSlide="currentSlide"
-    class=" mt-4 lg:mt-16 relative px-6 md:px-8 max-w-[1500px] w-[90%] mx-auto"
+    class=" mt-4 lg:mt-16 relative px-6 md:px-8 max-w-[1500px]  mx-auto"
   >
     <Slide v-for="(slide, index) in slides" :key="index">
       <div class="flex flex-col sm:flex-row bg-white rounded-xl overflow-hidden ">
