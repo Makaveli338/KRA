@@ -1,5 +1,5 @@
 <template >
-  <div class="overflow-x-hidden">
+  <div >
     <!-- dummy container  -->
     <!-- <div class=" w-full mt-16 grid md:flex">
           <div class=" w-full md:w-1/2">
@@ -340,7 +340,7 @@
 
     <!-- Business tax payers -->
     <section
-      class="w-[90%] mx-auto text-[#475467] text-xl max-w-[1500px]  font-semibold mt-[80] md:mt-[50px] lg:mt-24"
+      class="w-[90%] mx-auto text-[#475467] text-xl max-w-[1500px]  font-semibold mt-[80] md:mt-[50px] lg:mt-24 overflow-x-clip"
     >
       <!-- Heading -->
       <div data-aos="fade-up-left" class="mt-8 max-w-[824px] mx-auto">
@@ -362,7 +362,7 @@
       </div>
       <!-- lower section -->
       <section
-        class="mt-16 md:px-8 grid md:flex md:gap-8 gap-4 justify-between"
+        class="mt-16 md:px-8 grid md:flex md:gap-8 gap-4 justify-between overflow-x-clip"
       >
         <!--Right image  -->
         <div>
@@ -698,7 +698,7 @@
       <KRAChekers />
         
       <!-- Technology... -->
-      <div class="flex justify-center lg:justify-end ">
+      <div class="flex justify-center lg:justify-end overflow-x-clip ">
       <div 
         class="mt-16 px-10 md:pl-10 md:pr-[90px] md:gap-[107px] bg-[#9E0008] py-10 w-[90%] lg:h-[431px] rounded-xl md:rounded-l-xl   text-white  "
       >
