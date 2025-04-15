@@ -412,9 +412,9 @@
 
     <!-- Invoicing -->
     <section class="bg-[#2C2829] ">
-      <div class=" max-w-[1500px] mx-auto md:h-auto mt-12 grid md:flex md:pb-20 ">
+      <div class=" max-w-[1500px] mx-auto md:h-auto mt-12 grid md:flex md:pb-5  ">
       <!-- Right text -->
-      <div data-aos="fade-up" class="md:pt-32 py-10 px-6  text-white text-lg md:w-1/2">
+      <div data-aos="fade-up" class="md:py-25 pl-24  text-white text-lg md:w-1/2">
         <h1 class="font-roboto font-semibold text-4xl">Invoicing</h1>
         <p class="md:w-[69.5%] mt-5">
           Transform the way you manage your business seamlessly with ETIMS
@@ -700,7 +700,7 @@
       <!-- Technology... -->
       <div class="flex justify-center lg:justify-end overflow-x-clip ">
       <div 
-        class="mt-16 px-10 md:pl-10 md:pr-[90px] md:gap-[107px] bg-[#9E0008] py-10 w-[90%] lg:h-[431px] rounded-xl md:rounded-l-xl   text-white  "
+        class="mt-16 px-10 md:pl-10 md:pr-[90px] md:gap-[107px] bg-[#9E0008] py-10 w-[95%] lg:h-[431px] rounded-xl lg:rounded-l-xl lg:rounded-r-none  text-white  "
       >
       <div data-aos="fade-up" class=" max-w-[1500px] mx-auto grid lg:flex">
         <div class="lg:w-[94%] mx-auto w-full">
